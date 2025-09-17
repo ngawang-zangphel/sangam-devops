@@ -1,6 +1,7 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+const API_BASE_URL = 'http://localhost:4500';
 
 class TaskService {
+
   async getAllTasks() {
     const response = await fetch(`${API_BASE_URL}/tasks`);
 

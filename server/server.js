@@ -8,7 +8,7 @@ const taskRoutes = require('./routes/tasks');
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4500;
 
 // Middleware
 app.use(cors());
@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use('/api/tasks', taskRoutes);
+app.use('/tasks', taskRoutes);
 
 // Health check endpoint
 app.get('/health', (req, res) => {
