@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://16.171.36.230:4500';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 class TaskService {
 
