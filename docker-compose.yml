@@ -8,7 +8,10 @@ services:
     ports: 
       - "4500:4500"
   frontend:
-    build: ./client
+    build: 
+      context: ./client
+      args: 
+        VITE_API_URL = http://3.26.242.54:4500/api
     container_name: frontend 
     restart: always
     env_file:
@@ -17,4 +20,3 @@ services:
       - "5173:5173"
     depends_on:
       - backend
-
