@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:4500';
+const API_BASE_URL = 'http://16.171.36.230:4500';
 
 class TaskService {
 
